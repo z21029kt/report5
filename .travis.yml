@@ -1,0 +1,20 @@
+sudo: false
+
+language: bash
+
+addons:
+
+        apt:
+
+                sources:
+
+                        - sourceline:'ppa:duggan/bats'
+
+                packages:
+
+                        - bats
+
+                        - bc
+
+script: bats ./test-report5.sh
+
